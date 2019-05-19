@@ -1,0 +1,50 @@
+{
+  "name": "graphql-react",
+  "version": "1.0.0",
+  "description": "GraphQL app with ReactJS and NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "server": "nodemon server/app.js",
+    "client": "cd client && npm start",
+    "client-build": "cd client && npm run build",
+    "client-install": "cd client && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "jest src/App.js"
+  },
+  "keywords": [
+    "ReactJS",
+    "GraphQL",
+    "NodeJS",
+    "ExpressJS",
+    "Apollo",
+    "Server",
+    "React Hooks"
+  ],
+  "author": "Xizors",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.3.0",
+    "helmet": "^3.18.0",
+    "mongoose": "^5.5.8",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "nodemon": "^1.19.0",
+    "prettier": "^1.17.1"
+  }
+}
